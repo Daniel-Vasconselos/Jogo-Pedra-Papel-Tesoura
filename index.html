@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedra-Papel-Tesoura</title>
+        <link rel="stylesheet" href="src/css/estilo.css">
+    </head>
+    <body>
+        <header>
+            <H1 id="titulo">Pedra - Papel - Tesoura</H1>
+        </header>
+
+        <section>
+            <div id="controle">
+                <h2 id="tempo">00:00</h2>
+                <div id="pontos">
+                    <strong>Placar</strong>
+                    <div id="pt_jogadores">
+                        <div id="j1">
+                            <h3 id="txt_jogador1">Jogador</h3>
+                            <p id="pt_j1">0</p>
+                        </div>
+                        <div id="j2">
+                            <h3 id="txt_jogador2">Computador</h3>
+                            <p id="pt_j2">0</p>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+
+            <div id="jogo">
+                <div id="jogador1">
+                    <h2 id="id_jogador1"><strong>Jogador</strong></h2>
+                    <div id="div_img_j1">
+                        <img id="img_jogador1" src="" alt="">
+                    </div>
+                </div>
+                <img id="img_vs" src="src/imagens/vs.png" alt="vs">
+                <div id="jogador2">
+                    <h2 id="id_jogador2"><strong>Computador</strong></h2>
+                    <div id="div_img_j2">
+                        <img id="img_jogador2" src="" alt="">
+                    </div>
+                   
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p id="info">Para jogar, selecione uma das opções (Pedra, Papel ou Tesoura) e clique em 'Começar'</p>
+            <div id="açoes">
+                <input  type="button" id="btn_começar" value="Começar" onclick="começarjogo()">
+                <div>
+                    <input type="button" id="btn_pedra"  onclick="pedra()">
+                    <input type="button" id="btn_papel"  onclick="papel()">
+                    <input type="button" id="btn_tesoura"  onclick="tesoura()">
+                </div>
+            </div>
+          
+        </footer>
+        <script src="src/JS/comando.js"></script>
+    </body>
+</html>

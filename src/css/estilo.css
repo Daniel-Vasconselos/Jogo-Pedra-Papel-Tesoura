@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'cronometro';
+    src: url('../fontes/digital/DS-DIGI.TTF') 
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url('../fontes/pixel_gamer/PixelGamer-Regular.otf')
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'placar';
+    src: url('../fontes/novaria_vista/Novaria_Vista.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'info';
+    src: url('../fontes/Typo_Speed/Typo_Speed_Bold_Italic_Demo.otf ')
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(46, 235, 9);
+}
+
+header{
+    font-size: 20pt;
+    font-family: 'titulo', sans-serif;
+    color: white;
+    text-align: center;
+}
+#titulo{
+    text-shadow: 
+        -3px -3px 0 #000,
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000;
+         margin: 20px;
+         margin-bottom: 0%;     
+}
+
+#controle{
+    width: 650px;
+    margin: auto;
+    display: flex;
+    
+}
+
+#pontos{
+    padding: 3px 10px 3px 10px;
+    font-size: 20pt;
+    font-family: 'placar', sans-serif;
+    margin-left: auto;
+    width: 300px;
+    text-align: center;
+    border: #000 solid 5px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#pt_jogadores{
+    display: flex;
+}
+
+#j1{
+    margin-right: auto;
+
+}
+
+#txt_jogador1{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 20pt;
+    font-family: 'placar', sans-serif;
+}
+
+#pt_j1{
+    margin: 5px;
+}
+
+#j2{
+    margin-left: auto;
+}
+
+#txt_jogador2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 20pt;
+    font-family: 'placar', sans-serif;
+}
+
+#pt_j2{
+    margin: 5px;
+}
+
+#tempo{
+    font-size: 90pt;
+    font-family: 'cronometro', sans-serif;
+    margin: 0%;
+    padding: 10px;
+
+}
+
+#jogo{
+    background-color: white;
+    width: 750px;
+    height: 280px;
+    padding: 0px 15px 0px 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.748);
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#jogador1{
+    background-color: blue;
+    height: 240px;
+    width: 240px;
+    border-radius: 10px;
+    margin-right: auto;
+    border: 8px solid #000;
+    position: relative;
+    transition: left 0.4s ease;
+    left: 0;
+}
+
+
+#id_jogador1{
+    background-color: lightblue;
+    margin: 0%;
+    text-align: center;
+    font-family: 'placar', sans-serif;
+    font-size: 20pt;
+    margin-left: auto;
+    border-bottom:  #000 solid 5px;
+    padding-bottom: 2%;
+}
+
+#div_img_j1{
+    width: 240px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#img_jogador1{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+}
+
+#img_vs{
+    height: 200px;
+    width: 200px;
+}
+
+#jogador2{
+    background-color: red;
+    height: 240px;
+    width:  240px;
+    border-radius: 10px;
+    margin-left: auto;
+    border: 8px solid #000;
+    position: relative;
+    transition: left 0.4s ease;
+    left: 0;
+}
+
+#id_jogador2{
+    background-color: lightcoral;
+    margin: 0%;
+    text-align: center;
+    font-family: 'placar', sans-serif;
+    font-size: 20pt;
+    margin-left: auto;
+    border-bottom:  #000 solid 5px;
+    padding-bottom: 2%;
+}
+
+#div_img_j2{
+    width: 240px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#img_jogador2{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#info{
+    font-family: 'info', sans-serif;
+    font-size: 12pt;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#açoes{
+    width: 400px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn_começar{
+    width: 110px;
+    height: 80px;
+    font: normal 20px arial;
+    background-color: burlywood;
+    border: #000 solid 3px;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+#btn_pedra{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    background-image: url("../imagens/pedra-esquerdo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: #000 solid 3px;
+    border-radius: 10px;   
+}
+
+#btn_papel{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    background-image: url("../imagens/papel-esquerdo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: #000 solid 3px;
+    border-radius: 10px;
+    
+}
+
+#btn_tesoura{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    background-image: url("../imagens/tesoura-esquerdo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: #000 solid 3px;
+    border-radius: 10px;
+}
+  
+  .shake {
+    animation: shake 0.3s;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+  }
+  
